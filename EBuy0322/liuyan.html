@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/qiugou.css">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,11 +24,21 @@
 </head>
 
 <body>
+    <div class="text-center era top-style-fixed">
+        <h2 class="era__title">
+          <a href="javascript:history.go(-1);"><span class="glyphicon glyphicon-chevron-left pull-left" aria-hidden="true"></span></a>
+          详细信息 Info
+          <!-- 发布 -->
+          <a href="index.html"><span class="glyphicon glyphicon-home pull-right" aria-hidden="true"></span></a>
+          
+        </h2>
+    </div>
+
     <div class="wrapper">
         <div class="intro">
             <!-- 内容 -->
             <div class="container-fluid introContent liuyan-con">
-                <div class="media liuyan-media">
+                <div class="media liuyan-media margin-top-header">
                     <div class="media-left">
                         <a href="#">
                             <img class="media-object img-circle" src="images/con4.png" alt="发布人头像">
@@ -95,6 +106,76 @@
                     <p class="liuyan-con-p">
                         好棒好棒！求美女联系方式O(∩_∩)O~~好棒好棒！求美女联系方式O(∩_∩)O~~
                     </p>
+                </div>
+            </div>
+            <!-- 立即下单btn -->
+            <div class="container">
+                <a href="#" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-danger btn btn-block col-xs-10">立即下单</a>
+            </div>
+
+        </div>
+        <!-- 下单信息 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                 <!-- 填写下单信息 -->
+                    <form action="">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title" id="myModalLabel">客官，终于等到你了~\(≧▽≦)/~</h2>
+                        </div>
+                        <div class="modal-body">
+                            <article class="send-fabu">
+                                <p>
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    <span>收货人：
+                                        <span class="wordage">（剩余字数：<span id="syqiuwu"> 10</span>）</span>
+                                    </span>
+                                </p>
+                                <input type="text" class="form-control"onkeyup="checkLength(this,'10','syqiuwu');" placeholder="20字以内">
+                                
+                               <p>
+                                   <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                   <span>联系电话：
+                                        <span class="wordage">（剩余字数：<span id="syqiupho"> 11</span>）</span>
+                                   </span>
+                               </p>
+                               <input type="text" class="form-control" placeholder="13812345678" onkeyup="checkLength(this,'11','syqiupho');">
+
+                               <p>
+                                   <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                   <span>邮编：
+                                        <span class="wordage">（剩余字数：<span id="syqiumail"> 6</span>）</span>
+                                   </span>
+                               </p>
+                               <input type="text" class="form-control" placeholder="510000" onkeyup="checkLength(this,'6','syqiumail');">
+
+                               <p>
+                                   <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+                                   <span>收货地址：
+                                       <span class="wordage">（剩余字数：<span id="syqiuadd"> 60</span>）</span>
+                                   </span>
+                               </p>
+                               <textarea name="message" class="form-control" onkeyup="checkLength(this,'60','syqiuadd');" rows="3"  placeholder="( 广东省 韶关市 浈江区 大学路 韶关学院)"></textarea>
+
+                               <p>
+                                   <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                   <span>留言：
+                                    <span class="wordage">（剩余字数：<span id="syqiusta"> 100</span>）</span>
+                                   </span>
+                               </p>
+                               <textarea name="message" class="form-control" onkeyup="checkLength(this,'100','syqiusta');" rows="3"  placeholder="客官，可以写下您对需求物品有什么要求，100个字以内噢~例如：要黑色/8成新/可联系QQ：8888等，谢谢O(∩_∩)O"></textarea>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">提交</button>
+                        </div>
+
+
+                    </form>
+
                 </div>
             </div>
         </div>

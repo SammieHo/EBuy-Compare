@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>EBuy——便捷的二手交易求购</title>
+    <title>EBuy——便捷的二手交易闲置</title>
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
@@ -48,22 +48,25 @@
                                 <p>
                                     <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
                                     <span>需求物品：
-                                    	<span class="wordage">（剩余字数：<span id="sywu"> 20</span>）</span>
+                                        <span class="wordage">（剩余字数：<span id="syqiuwu"> 20</span>）</span>
                                     </span>
                                 </p>
-                                <input type="text" class="form-control"onkeyup="checkLength20(this);" placeholder="20字以内">
-                                <p>
-                                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                                    <span>联系电话：</span>
-                                </p>
-                                <input type="text" class="form-control" placeholder="13812345678">
-                                <p>
-                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                                    <span>詳細描述：
-                                    	<span class="wordage">（剩余字数：<span id="sy"> 100</span>）</span>
-                                    </span>
-                                </p>
-                                <textarea name="message" class="form-control" onkeyup="checkLength(this);" rows="3"  placeholder="客官，可以写下您对需求物品有什么要求，100个字以内噢~例如：要黑色/8成新/可联系QQ：8888等，谢谢O(∩_∩)O"></textarea>
+                                <input type="text" class="form-control"onkeyup="checkLength(this,'20','syqiuwu');" placeholder="20字以内">
+
+                               <p>
+                                   <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                   <span>联系电话：
+                                        <span class="wordage">（剩余字数：<span id="syqiupho"> 11</span>）</span>
+                                   </span>
+                               </p>
+                               <input type="text" class="form-control" placeholder="13812345678" onkeyup="checkLength(this,'11','syqiupho');">
+                               <p>
+                                   <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                   <span>詳細描述：
+                                    <span class="wordage">（剩余字数：<span id="syqiusta"> 100</span>）</span>
+                                   </span>
+                               </p>
+                               <textarea name="message" class="form-control" onkeyup="checkLength(this,'100','syqiusta');" rows="3"  placeholder="客官，可以写下您对需求物品有什么要求，100个字以内噢~例如：要黑色/8成新/可联系QQ：8888等，谢谢O(∩_∩)O"></textarea>
                             </article>
                         </div>
                         <div class="modal-footer">
@@ -244,36 +247,9 @@
     <br>
     <br>
 
-    <script type="text/javascript">
-    function checkLength(which) {
-        var maxChars = 100; //
-        if (which.value.length > maxChars) {
-            alert("您出入的字数超多限制!");
-            // 超过限制的字数了就将 文本框中的内容按规定的字数 截取
-            which.value = which.value.substring(0, maxChars);
-            return false;
-        } else {
-            var curr = maxChars - which.value.length; //250 减去 当前输入的
-            document.getElementById("sy").innerHTML = curr.toString();
-            return true;
-        }
-    }
-    function checkLength20(which) {
-        var maxChars = 20; //
-        if (which.value.length > maxChars) {
-            alert("您出入的字数超多限制!");
-            // 超过限制的字数了就将 文本框中的内容按规定的字数 截取
-            which.value = which.value.substring(0, maxChars);
-            return false;
-        } else {
-            var curr = maxChars - which.value.length; //250 减去 当前输入的
-            document.getElementById("sywu").innerHTML = curr.toString();
-            return true;
-        }
-    }
-    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
 </body>
 
 </html>
