@@ -1,0 +1,42 @@
+a,a:active,a:hover,a:focus{
+	color: #555;
+}
+
+.nav-tabs{
+	border-bottom: none;
+	margin-top: 50px;
+}
+
+.nav > li > a{
+	padding: 5px 15px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border-width: 2px;
+	border-color: transparent transparent #000;
+}
+.nav > li {
+	display: inline-block;
+	width: 32%;
+}
+.nav-tabs > li{
+	/*clear: both;*/
+	float: none;
+}
+
+header{
+	position: fixed;
+	background: #333658;
+	width: 100%;
+	padding: 10px 15px;
+	color: #fff;
+	z-index: 999;
+}
+
+#file-5{
+	visibility: hidden;
+}
+
+.tab-content,.nav-tabs{
+	background: #fff;
+}
