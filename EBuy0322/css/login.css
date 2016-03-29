@@ -1,0 +1,219 @@
+html {
+    font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, Arial, STHeiTi, sans-serif;
+}
+body{
+	margin: 0;
+	width: 100%;
+    overflow: hidden;
+    background: #fff url(../images/login_bg.png) no-repeat fixed center;
+    background-size:  100% 100%;
+}
+button{
+	padding: 0;
+	margin: 0;
+}
+.login-form,
+.register-form,
+form,
+label>span,
+input,
+.login-form img,
+.register-form img,
+footer{
+    position: absolute;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none
+}
+
+label,.login_msg{
+    position: relative;
+}
+
+a {
+    color: #bbb;
+}
+/*keyframe*/
+@keyframes myfirst
+{
+	0%   {left:0px; top:50px;}
+	100% {left:0px; top:0px;}
+}
+@-webkit-keyframes myfirst
+{
+	0%   {left:0px; top:50px;}
+	100% {left:0px; top:0px;}
+}
+/*keyframe END*/
+
+.login-form img,
+.register-form img{
+	top: -60px;
+	left: 80px;
+}
+.login-form p{
+	text-align: center;
+	font-size: 200%;
+}
+.login-form,
+.register-form{
+    width: 280px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -140px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+.register-form{
+	height: 430px;
+	margin-top: -215px;
+}
+.forgetten{
+	height: 360px;
+}
+form {
+    width: 100%;
+    top: 60px;
+}
+
+label{
+    position: relative;
+    background: rgba(255,255,255,0.6);
+    display: block;
+    width: 240px;
+    height: 40px;
+    margin: 26px auto;
+    border-radius: 10px;
+    animation: myfirst 1.5s;
+    -webkit-animation: myfirst 1.5s;
+}
+.code,.send{
+	display: inline-block;
+	width: 120px !important;
+	height: 40px;
+	margin: 0 auto !important;
+}
+.send{
+	width: 106px !important;
+	margin-left: 9px !important;
+	border-radius: 10px;
+	float: right;
+	background: rgba(255, 206, 70, 0.8) !important;
+}
+.send button{
+	display: block;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	color: #454545;
+	background: #ffce46;
+	border-radius: 10px;
+	border: 0;
+	border-right: 2px solid #ffab58;
+	border-bottom: 2px solid #ffab58;
+}
+.register-code{
+	padding: 0 20px;
+}
+input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0 10px;
+    box-shadow: none;
+    border: none;
+    color: #454545;
+}
+input[type="text"],input[type="password"]{
+	padding-left: 44px;
+}
+input[type="submit"]{
+    font-weight: bold;
+}
+input[name="pwd"]{
+	width: 200px;
+}
+/* icon */
+.sprite {
+	position: absolute;
+	top: 9px;
+	left: 13px;
+    background: url(../images/loginsprite.png) no-repeat;
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+}
+.sprite-pwd {
+    background-position: -109px -5px;
+}
+
+.sprite-user {
+    background-position: -136px -5px;
+}
+.sprite-phone {
+    background-position: -5px -5px;
+}
+.sprite-close-eye {
+	background-position:-71px -5px;
+    width: 28px;
+    height: 18px;
+    left: 200px;
+    top: 11px;
+}
+/* icon END*/
+
+.login_msg{
+	width: 240px;
+	margin: 0 auto;
+	font-size: 13px;
+}
+.login_msg a{
+	color: #454545;
+}
+.login_msg a:nth-of-type(2){
+	position: absolute;
+	right: 5px;
+}
+.btn{
+	background: #ffce46;
+	margin-bottom: 12px;
+}
+.btn>input:hover{
+	border-right: 4px solid #ffab58;
+	border-bottom: 4px solid #ffab58;
+	background: #ffce46;
+	border-radius: 10px;
+	transition:background .5s;
+}
+
+footer {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.create-account{
+	width: 155px;
+	height: 50px;
+	display: inline-block;
+	background: url(../images/loginsprite.png) -5px -36px no-repeat;
+}
+
+/*Is empty*/
+.input_check{
+	position: absolute;
+	display: none;
+	top: 44px;
+	left: 26px;
+	font-size: 12px;
+	/*display: */
+}

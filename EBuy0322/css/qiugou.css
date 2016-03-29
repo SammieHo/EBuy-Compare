@@ -1,0 +1,93 @@
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 50px 10px 0;
+}
+
+.bglinear {
+    background: transparent linear-gradient(0deg, rgb(91, 155, 239), rgb(179, 229, 252)) repeat scroll 0% 0%;
+    padding: 10px 0 15px;
+    min-width: 280px;
+    margin-top: 36px;
+}
+
+.era {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -36px;
+}
+
+.era {
+    text-align: center;
+    /*position: relative;*/
+    z-index: 1;
+    /*padding-bottom: 20px;*/
+}
+
+.qiu-fabu {
+    color: #FFF;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.era__title {
+    background-color: #454545;
+    color: #EEEEEE;
+    /*display: inline-block;*/
+    padding: 10px 20px;
+    /*border-radius: 4px;*/
+    cursor: default;
+    margin: 0 0 10px;
+}
+
+h2{
+	font-size: 16px;
+}
+
+.qiu-return {
+    color: #fff;
+    margin-right: 15px;
+}
+
+.width3rem{
+	width: 30px;
+	height: 30px;
+}
+
+section{
+	margin: 0 10px 10px;
+	padding: 10px;
+	background: #fff;
+	border:1px solid #efefef;
+	/*border-radius: 6px;*/
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blockmess{
+	padding: 5px 10px;
+	font-size: 12px;
+	color: #fff;
+	background: #673AB7;
+}
+
+.glyphicon{
+	color: #FBAA6F;
+}
+
+.qigou-need{
+
+}
+
+article p span:nth-of-type(2){
+	font-size: 12px;
+	padding-left: 8px;
+}
+
+.wrapper{
+	margin-bottom: 0;
+}
+.send-fabu p,.send-fabu input{
+	margin-bottom: 6px;
+}

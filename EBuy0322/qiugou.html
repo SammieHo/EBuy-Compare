@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>EBuy——便捷的二手交易求购</title>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/qiugou.css">
+
+</head>
+
+<body>
+    <div class="era">
+        <h2 class="era__title">
+	      <a href="javascript:history.go(-1);" class="qiu-return pull-left">< 返回</a>
+	      求购 Info
+	      <!-- 发布 -->
+	      <a href="#" class="pull-right qiu-fabu" data-toggle="modal" data-target="#myModal">+</a>
+	    </h2>
+    </div>
+    <div class="wrapper bglinear">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                 <!-- 发布的求购信息 -->
+                    <form action="">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title" id="myModalLabel">客官，需要什么呢？~\(≧▽≦)/~</h2>
+                        </div>
+                        <div class="modal-body">
+                            <article class="send-fabu">
+                                <p>
+                                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                                    <span>需求物品：
+                                    	<span class="wordage">（剩余字数：<span id="sywu"> 20</span>）</span>
+                                    </span>
+                                </p>
+                                <input type="text" class="form-control"onkeyup="checkLength20(this);" placeholder="20字以内">
+                                <p>
+                                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                                    <span>联系电话：</span>
+                                </p>
+                                <input type="text" class="form-control" placeholder="13812345678">
+                                <p>
+                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                    <span>詳細描述：
+                                    	<span class="wordage">（剩余字数：<span id="sy"> 100</span>）</span>
+                                    </span>
+                                </p>
+                                <textarea name="message" class="form-control" onkeyup="checkLength(this);" rows="3"  placeholder="客官，可以写下您对需求物品有什么要求，100个字以内噢~例如：要黑色/8成新/可联系QQ：8888等，谢谢O(∩_∩)O"></textarea>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">发布</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- 求购信息模块一 -->
+        <section>
+            <!-- 头像信息 -->
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle width3rem" src="images/con4.png">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+		     	 <a href="#">SammieHo</a>
+    		   	 <span class="pull-right blockmess">需求</span>
+    		    </h4>
+                </div>
+            </div>
+            <!-- 求购信息 -->
+            <article>
+                <p class="qigou-need">
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                    <span>8G U盘 </span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                    <span>18218512315</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    <span>描述描述描述.。。。.100个字以内。。。。。上一行电话那里如果为空，则隐藏，可在描述这里写联系方式，QQ等，或私聊。。。。。。20块收一个8G U盘，不限牌子，有的私聊或致电联系 </span>
+                </p>
+            </article>
+        </section>
+        <!-- 求购信息模块一 -->
+        <section>
+            <!-- 头像信息 -->
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle width3rem" src="images/con4.png">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+    		   	 SammieHo
+    		   	 <span class="pull-right blockmess">需求</span>
+    		    </h4>
+                </div>
+            </div>
+            <!-- 求购信息 -->
+            <article>
+                <p class="qigou-need">
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                    <span>8G U盘 20个字以内</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                    <span>18218512315</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    <span>描述描述描述 </span>
+                </p>
+            </article>
+        </section>
+        <!-- 求购信息模块一 -->
+        <section>
+            <!-- 头像信息 -->
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle width3rem" src="images/con4.png">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+    		   	 SammieHo
+    		   	 <span class="pull-right blockmess">需求</span>
+    		    </h4>
+                </div>
+            </div>
+            <!-- 求购信息 -->
+            <article>
+                <p class="qigou-need">
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                    <span>8G U盘 20个字以内</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                    <span>18218512315</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    <span>描述描述描述. </span>
+                </p>
+            </article>
+        </section>
+        <!-- 求购信息模块一 -->
+        <section>
+            <!-- 头像信息 -->
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle width3rem" src="images/con4.png">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+    		   	 SammieHo
+    		   	 <span class="pull-right blockmess">需求</span>
+    		    </h4>
+                </div>
+            </div>
+            <!-- 求购信息 -->
+            <article>
+                <p class="qigou-need">
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                    <span>8G U盘 20个字以内</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                    <span>18218512315</span>
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                    <span>描述描述描述.。。。.100个字以内。。。。。上一行电话那里如果为空，则隐藏，可在描述这里写联系方式，QQ等，或私聊。。。。。。20块收一个8G U盘，不限牌子，有的私聊或致电联系 </span>
+                </p>
+            </article>
+        </section>
+        <!-- 底部固定导航 -->
+        <footer>
+            <ul class="footerNav">
+                <li id="footHome" class="footBlock">
+                    <a href="index.html">
+                        <i class="sprite sprite-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li id="footDisc" class="footBlock">
+                    <a href="search.html">
+                        <i class="sprite sprite-discover"></i>
+                        <span>发现</span>
+                    </a>
+                </li>
+                <li id="footFabu" class="footBlock">
+                    <a href="fabu.html">
+                        <i class="sprite sprite-fabu"></i>
+                        <span>发布</span>
+                    </a>
+                </li>
+                <li id="footMess" class="footBlock">
+                    <a href="mess.html">
+                        <i class="sprite sprite-messnav"></i>
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li id="footMe" class="footBlock">
+                    <a href="mine.html">
+                        <i class="sprite sprite-mine"></i>
+                        <span>我的</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <br>
+    <br>
+
+    <script type="text/javascript">
+    function checkLength(which) {
+        var maxChars = 100; //
+        if (which.value.length > maxChars) {
+            alert("您出入的字数超多限制!");
+            // 超过限制的字数了就将 文本框中的内容按规定的字数 截取
+            which.value = which.value.substring(0, maxChars);
+            return false;
+        } else {
+            var curr = maxChars - which.value.length; //250 减去 当前输入的
+            document.getElementById("sy").innerHTML = curr.toString();
+            return true;
+        }
+    }
+    function checkLength20(which) {
+        var maxChars = 20; //
+        if (which.value.length > maxChars) {
+            alert("您出入的字数超多限制!");
+            // 超过限制的字数了就将 文本框中的内容按规定的字数 截取
+            which.value = which.value.substring(0, maxChars);
+            return false;
+        } else {
+            var curr = maxChars - which.value.length; //250 减去 当前输入的
+            document.getElementById("sywu").innerHTML = curr.toString();
+            return true;
+        }
+    }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
