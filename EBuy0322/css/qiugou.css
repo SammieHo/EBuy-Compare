@@ -17,6 +17,9 @@
     margin-bottom: 10px;
     margin-top: -36px;
 }
+.top-style-fixed{
+    margin-top: 0;
+}
 
 .era {
     text-align: center;
@@ -88,6 +91,19 @@ article p span:nth-of-type(2){
 .wrapper{
 	margin-bottom: 0;
 }
-.send-fabu p,.send-fabu input{
+.send-fabu p,.send-fabu input,.send-fabu select, .send-fabu textarea,.send-fabu .input-group{
 	margin-bottom: 6px;
+}
+
+header a{
+    color: #fff;
+}
+#scroller{
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+a .glyphicon{color: #fff;}
+
+.margin-top-header{
+    margin-top: 40px !important;
 }
