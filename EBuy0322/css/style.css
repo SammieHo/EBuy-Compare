@@ -108,8 +108,7 @@ a:hover{
     /*border: 1px solid #333;*/
     /*border-radius: 0.5rem;*/
     box-shadow: 0px 0px 3px #333;
-    /*border-bottom: 20px solid #eee;*/
-    margin-bottom: 10px;
+    border-bottom: 20px solid #eee;
 }
 
 .media-object {
