@@ -40,3 +40,13 @@ header{
 .tab-content,.nav-tabs{
 	background: #fff;
 }
+
+.col-4{
+	width: 40%;
+}
+.col-59{
+	width: 59%;
+}
+#locationaddress,#locationcity{
+	display: inline-block;
+}
