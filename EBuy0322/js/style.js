@@ -28,10 +28,6 @@ window.onload=function(){
 
 }
 
-$(document).pjax('a', '#container', {
-    fragment: '#main',
-    timeout: 8000
-});
 
 // 限制字数，
 // which=this：当前onkey 输入的字数
