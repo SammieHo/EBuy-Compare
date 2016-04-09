@@ -304,83 +304,72 @@ footer {
 }
 
 .sprite {
-    background-image: url(../images/spritesheet.png);
+    background-image: url(../images/spritesheet24.png);
     background-repeat: no-repeat;
     display: block;
     margin: 0.5em auto 0.5em;
+    width: 24px;
+    height: 24px;
 }
 
 .sprite-address {
-    width: 13px;
+    width: 16px;
+    height: 16px;
+    background-position: -107px -5px;
+}
+.sprite-mess {
+	width: 18px;
     height: 15px;
-    background-position: -5px -5px;
+    background-position: -337px -5px;
 }
-
-.sprite-discover {
-    width: 23px;
-    height: 23px;
-    background-position: -28px -5px;
-}
-
-.sprite-fabu {
-    width: 22px;
-    height: 23px;
-    background-position: -61px -5px;
-}
-
 .sprite-favorite {
-    width: 21px;
-    height: 17px;
-    background-position: -93px -5px;
-}
-
-.sprite-global {
-    width: 23px;
-    height: 27px;
-    background-position: -124px -5px;
+    width: 17px;
+    height: 15px;
+    background-position: -365px -5px;
 }
 
 .sprite-home {
-    width: 23px;
-    height: 23px;
-    background-position: -157px -5px;
+    background-position: -73px -5px;
 }
 
-.sprite-label {
-    width: 24px;
-    height: 26px;
-    background-position: -190px -5px;
+.sprite-discover {
+    background-position: -201px -5px;
 }
 
-.sprite-lay {
-    width: 26px;
-    height: 26px;
-    background-position: -224px -5px;
-}
-
-.sprite-mess {
-    width: 21px;
-    height: 17px;
-    background-position: -260px -5px;
+.sprite-fabu {
+    background-position: -167px -5px;
 }
 
 .sprite-messnav {
-    width: 23px;
-    height: 23px;
-    background-position: -291px -3px;
+    background-position: -133px -5px;
 }
 
 .sprite-mine {
-    width: 23px;
-    height: 23px;
-    background-position: -324px -5px;
+    background-position: -303px -5px;
+}
+
+.sprite-label {
+    background-position: -269px -5px;
+}
+
+.sprite-lay {
+    background-position: -5px -5px;
 }
 
 .sprite-news {
-    width: 26px;
-    height: 26px;
-    background-position: -5px -38px;
+    background-position:  -235px -5px;
 }
+
+.sprite-global {
+    background-position: -39px -5px;
+}
+
+
+
+
+
+
+
 
 .sprite-search {
     width: 360px;
