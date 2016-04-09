@@ -304,52 +304,52 @@ footer {
 }
 
 .sprite {
-    background-image: url(../images/spritesheet24.png);
+    background-image: url(../images/spritesheet32.png);
     background-repeat: no-repeat;
     display: block;
-    margin: 0.5em auto 0.5em;
-    width: 24px;
-    height: 24px;
+    margin: 0.3em auto 0.2em;
+    width: 32px;
+    height: 32px;
 }
 
 .sprite-address {
-    width: 16px;
-    height: 16px;
-    background-position: -107px -5px;
+    width: 24px;
+    height: 24px;
+    background-position: -131px -5px;
 }
 .sprite-mess {
-	width: 18px;
-    height: 15px;
-    background-position: -337px -5px;
+	width: 27px;
+    height: 23px;
+    background-position: -417px -5px;
 }
 .sprite-favorite {
-    width: 17px;
-    height: 15px;
-    background-position: -365px -5px;
+    width: 26px;
+    height: 23px;
+    background-position: -454px -5px;
 }
 
 .sprite-home {
-    background-position: -73px -5px;
+    background-position: -89px -5px;
 }
 
 .sprite-discover {
-    background-position: -201px -5px;
+    background-position: -249px -5px;
 }
 
 .sprite-fabu {
-    background-position: -167px -5px;
+    background-position: -207px -5px;
 }
 
 .sprite-messnav {
-    background-position: -133px -5px;
+    background-position: -165px -5px;
 }
 
 .sprite-mine {
-    background-position: -303px -5px;
+    background-position: -375px -5px;
 }
 
 .sprite-label {
-    background-position: -269px -5px;
+    background-position: -333px -5px;
 }
 
 .sprite-lay {
@@ -357,11 +357,11 @@ footer {
 }
 
 .sprite-news {
-    background-position:  -235px -5px;
+    background-position:  -291px -5px;
 }
 
 .sprite-global {
-    background-position: -39px -5px;
+    background-position: -47px -5px;
 }
 
 
