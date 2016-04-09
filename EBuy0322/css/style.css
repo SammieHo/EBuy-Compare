@@ -713,6 +713,7 @@ footer {
     /*text-align: center;*/
     color: #fff;
     line-height: 48px;
+    position: relative;
 }
 .return{
     height: 48px;
@@ -788,4 +789,15 @@ footer {
 }
 .img-pdl{
     padding-left: 5rem;
+}
+.liuyan-list-header{
+    position: absolute;
+    left: 16px;
+    color: #fff;
+}
+.media-body span{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

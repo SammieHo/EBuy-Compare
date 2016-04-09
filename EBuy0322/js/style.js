@@ -1,9 +1,7 @@
 window.onload=function(){
 	
-
+	var favor = document.getElementById('favor');
 	favor.onclick = function(){
-
-		var favor = document.getElementById('favor');
 		
 		if (favor.innerHTML == "收藏") {
 			favor.style.color = "red";
@@ -28,6 +26,10 @@ window.onload=function(){
 
 }
 
+// $(document).pjax('a', '#container', {
+//     fragment: '#main',
+//     timeout: 8000
+// });
 
 // 限制字数，
 // which=this：当前onkey 输入的字数
