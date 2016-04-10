@@ -100,10 +100,14 @@
 				        <p>
 				            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
 				            <span>所在位置：
-				            	<span class="wordage">（剩余字数：<span id="syxloca"> 16</span>）</span>
+				            	<span class="wordage">（剩余字数：<span id="syxloca"> 10</span>）</span>
 				            </span>
 				        </p>
-			            <input type="text" class="form-control" onkeyup="checkLength(this,'16','syxloca');" placeholder="如：北京市 朝阳区(xx市xx区)">
+
+			            <input type="text" id="locationcity" class="form-control col-4 " placeholder="北京市">
+
+			            <input type="text" id="locationaddress" class="form-control col-59 pull-right" onkeyup="checkLength(this,'10','syxloca');" placeholder="区/县/街道/学校">
+
 
 				        <!-- 上传文件在zyUpload.js  -->
 				        <p>
@@ -218,5 +222,13 @@
 
 	<script src="js/fileinput.js" type="text/javascript"></script>
 	<script src="js/fileinput_locale_zh.js" type="text/javascript"></script>
+
+	<script>
+	window.onload =function () {
+		var localcity = "韶关市";
+		var locacity = document.getElementById("locationcity");
+		locacity.value = localcity;
+	}
+	</script>
 </body>
 </html>

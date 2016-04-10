@@ -304,83 +304,72 @@ footer {
 }
 
 .sprite {
-    background-image: url(../images/spritesheet.png);
+    background-image: url(../images/spritesheet34.png);
     background-repeat: no-repeat;
     display: block;
-    margin: 0.5em auto 0.5em;
+    margin: 0.2em auto 0.1em;
+    width: 34px;
+    height: 34px;
 }
 
 .sprite-address {
-    width: 13px;
-    height: 15px;
+    width: 15px;
+    height: 22px;
+    background-position: -196px -5px;
+}
+.sprite-mess {
+    width: 22px;
+    height: 19px;
+    background-position: -49px -5px;
+}
+.sprite-favorite {
+    width: 22px;
+    height: 20px;
+    background-position: -125px -5px;
+}
+
+.sprite-home {
     background-position: -5px -5px;
 }
 
 .sprite-discover {
-    width: 23px;
-    height: 23px;
-    background-position: -28px -5px;
+    background-position: -353px -5px;
 }
 
 .sprite-fabu {
-    width: 22px;
-    height: 23px;
-    background-position: -61px -5px;
-}
-
-.sprite-favorite {
-    width: 21px;
-    height: 17px;
-    background-position: -93px -5px;
-}
-
-.sprite-global {
-    width: 23px;
-    height: 27px;
-    background-position: -124px -5px;
-}
-
-.sprite-home {
-    width: 23px;
-    height: 23px;
-    background-position: -157px -5px;
-}
-
-.sprite-label {
-    width: 24px;
-    height: 26px;
-    background-position: -190px -5px;
-}
-
-.sprite-lay {
-    width: 26px;
-    height: 26px;
-    background-position: -224px -5px;
-}
-
-.sprite-mess {
-    width: 21px;
-    height: 17px;
-    background-position: -260px -5px;
+    background-position: -81px -5px;
 }
 
 .sprite-messnav {
-    width: 23px;
-    height: 23px;
-    background-position: -291px -3px;
+    background-position: -221px -5px;
 }
 
 .sprite-mine {
-    width: 23px;
-    height: 23px;
-    background-position: -324px -5px;
+    background-position: -265px -5px;
+}
+
+.sprite-label {
+    background-position: -441px -5px;
+}
+
+.sprite-lay {
+    background-position: -309px -5px;
 }
 
 .sprite-news {
-    width: 26px;
-    height: 26px;
-    background-position: -5px -38px;
+    background-position:  -397px  -5px;
 }
+
+.sprite-global {
+    background-position: -157px -5px;
+}
+
+
+
+
+
+
+
 
 .sprite-search {
     width: 360px;
@@ -713,6 +702,7 @@ footer {
     /*text-align: center;*/
     color: #fff;
     line-height: 48px;
+    position: relative;
 }
 .return{
     height: 48px;
@@ -788,4 +778,15 @@ footer {
 }
 .img-pdl{
     padding-left: 5rem;
+}
+.liuyan-list-header{
+    position: absolute;
+    left: 16px;
+    color: #fff;
+}
+.media-body span{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
