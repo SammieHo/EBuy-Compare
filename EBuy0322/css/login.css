@@ -90,8 +90,8 @@ label{
     height: 40px;
     margin: 26px auto;
     border-radius: 10px;
-    animation: myfirst 1.5s;
-    -webkit-animation: myfirst 1.5s;
+    animation: myfirst 0.5s;
+    -webkit-animation: myfirst 0.5s;
 }
 .code,.send{
 	display: inline-block;
